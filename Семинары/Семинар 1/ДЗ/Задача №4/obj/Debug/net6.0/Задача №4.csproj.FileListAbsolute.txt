@@ -1,0 +1,5 @@
+/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/Debug/net6.0/Задача №4.csproj.AssemblyReference.cache
+/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/Debug/net6.0/Задача №4.GeneratedMSBuildEditorConfig.editorconfig
+/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/Debug/net6.0/Задача №4.AssemblyInfoInputs.cache
+/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/Debug/net6.0/Задача №4.AssemblyInfo.cs
+/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/Debug/net6.0/Задача №4.csproj.CoreCompileInputs.cache
