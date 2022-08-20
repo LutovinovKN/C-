@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/ДЗ.csproj",
-      "projectName": "ДЗ",
-      "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/ДЗ.csproj",
+      "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/Задача №4.csproj",
+      "projectName": "Задача №4",
+      "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/Задача №4.csproj",
       "packagesPath": "/home/sideshow/.nuget/packages/",
-      "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/obj/",
+      "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Семинар 1/ДЗ/Задача №4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sideshow/.nuget/NuGet/NuGet.Config"
