@@ -7,11 +7,6 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 
-int Max(int number1, int number2, int number3)
-{
-    int result = number1;
-    if (number2 > result) result = number2;
-    if (number3 > result) result = number3;
-    return result;
-}
-Console.WriteLine(result);
+int[] ar = { number1, number2, number3 };
+int maxValue = ar.Max<int>();
+Console.WriteLine(maxValue);
