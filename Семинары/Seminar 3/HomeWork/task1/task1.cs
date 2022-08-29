@@ -3,14 +3,10 @@
 int value = new Random().Next(10000, 100000); // Рандомное 5-ти значное число
 Console.WriteLine($"Случайное число = {value}");
 
-
 //int value = 12321; // Проверка полиндромом
 
 int digitCount = (int)Math.Log10(value) + 1;
-
 Console.WriteLine(digitCount); // Показывает из скольки цифр состоит число
-
-
 
 for (int i = 1; i < ((digitCount / 2) + 1); i++)
 {
@@ -19,7 +15,6 @@ for (int i = 1; i < ((digitCount / 2) + 1); i++)
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Полиндром");
     }
-
     else
     {
         Console.ForegroundColor = ConsoleColor.Red;
