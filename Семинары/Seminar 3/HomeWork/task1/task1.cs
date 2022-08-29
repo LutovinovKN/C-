@@ -4,10 +4,7 @@ int value = new Random().Next(10000, 100000); // Рандомное 5-ти зн�
 //int value = 12321; // Проверка полиндромом
 Console.WriteLine($"Случайное число = {value}");
 
-
-
 int a = 1;
-
 
 int digitCount = (int)Math.Log10(value) + 1;
 Console.WriteLine(digitCount); // Показывает из скольки цифр состоит число
