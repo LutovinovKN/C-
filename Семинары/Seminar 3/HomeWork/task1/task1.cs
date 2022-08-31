@@ -2,7 +2,8 @@
 
 //int value = new Random().Next(10000, 100000); // Рандомное 5-ти значное число
 int value = 12231; // Проверка полиндромом
-Console.WriteLine($"Случайное число = {value}");
+Console.WriteLine($"Случайное \n" +
+$"число = {value}");
 
 bool res = false;
 
