@@ -5,8 +5,8 @@
 //! Далее сделать сумму элементов в массиве.
 
 Console.Write("Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());          //? ввод числа
-//int num = 452;
+//int num = Convert.ToInt32(Console.ReadLine());          //? ввод числа
+int num = 452;
 int tmp = num;                                          //? копия числа с удаляемой последней цифрой
 int digit = 0;
 
@@ -27,7 +27,7 @@ for (int i = 0; i < digitCount; i++)
     }
     else if (tmp / digit == 0)                          // если num / на последнюю цифру == 0
     {
-        divider[tmp] = digit;//! ЗДЕСЬ ОШИБКА
+        divider[i] = digit;//! ЗДЕСЬ ОШИБКА 
         tmp /= 10;                     // то последнюю цифру внести в массив divider
     }
     else
@@ -35,7 +35,7 @@ for (int i = 0; i < digitCount; i++)
         tmp /= 10;
         continue;
     }
-    tmp /= 10;                                          // удалить последнюю цифру
+    //tmp /= 10;                                          // удалить последнюю цифру
 }
 Console.WriteLine(string.Join(",", divider));           //! потом удалить
 int Sum = 0;
