@@ -11,21 +11,11 @@ int[] divider = new int[digitCount];                    //? массив для 
 for (int i = 0; i < digitCount; i++)
 {
     digit = tmp % 10;                                   // берётся последняя цифра
-    if (digit == 0)                                     // если цифра == 0, то перейти на следующую цифру, на 0 делить нельзя
-    {
-        tmp /= 10;
-        continue;
-    }
-    else if (num % digit == 0)                          // если num / на последнюю цифру == 0
+    if (digit != 0 && num % digit == 0)                 // если цифра == 0, то перейти на следующую цифру, на 0 делить нельзя
     {
         divider[i] = digit;
-        tmp /= 10;                     // то последнюю цифру внести в массив divider
     }
-    else
-    {
-        tmp /= 10;
-        continue;
-    }
+    tmp /= 10;                                      // то последнюю цифру внести в массив divider
 }
 
 int Sum = 0;
