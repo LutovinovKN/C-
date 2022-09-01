@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task2/task2.csproj": {}
+    "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task2/task2.csproj": {}
   },
   "projects": {
-    "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task2/task2.csproj": {
+    "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task2/task2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task2/task2.csproj",
+        "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task2/task2.csproj",
         "projectName": "task2",
-        "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task2/task2.csproj",
+        "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task2/task2.csproj",
         "packagesPath": "/home/sideshow/.nuget/packages/",
-        "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task2/obj/",
+        "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sideshow/.nuget/NuGet/NuGet.Config"
