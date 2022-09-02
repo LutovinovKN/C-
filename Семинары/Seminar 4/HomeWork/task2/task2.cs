@@ -15,7 +15,7 @@ for (int i = 0; i < digitCount; i++)
     {
         divider[i] = digit;
     }
-    tmp /= 10;                                      // то последнюю цифру внести в массив divider
+    tmp /= 10;                                          // то последнюю цифру внести в массив divider
 }
 
 int Sum = 0;
@@ -23,4 +23,4 @@ for (int i = 0; i < digitCount; i++)
 {
     Sum += divider[i];
 }
-Console.WriteLine("Сумма=" + Sum);
+

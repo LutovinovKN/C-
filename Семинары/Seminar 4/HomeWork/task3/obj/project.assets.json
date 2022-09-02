@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task3/task3.csproj",
+      "projectUniqueName": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task3/task3.csproj",
       "projectName": "task3",
-      "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task3/task3.csproj",
+      "projectPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task3/task3.csproj",
       "packagesPath": "/home/sideshow/.nuget/packages/",
-      "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/task3/obj/",
+      "outputPath": "/home/sideshow/GeekBrains/Семинар/C#/Семинары/Seminar 4/HomeWork/task3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sideshow/.nuget/NuGet/NuGet.Config"
