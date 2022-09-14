@@ -17,27 +17,38 @@ int[,] arr = new int[i_cor, j_cor];
 
 Random rnd = new Random();
 
-for (int i = 0; i < arr.GetLength(0); i++)
+void RandomArr(int[,] arrname)
 {
-    for (int j = 0; j < arr.GetLength(1); j++)
+    for (int i = 0; i < arrname.GetLength(0); i++)
     {
-        // вводим ограничение в цифрах от 0 до 9
-        arr[i, j] = rnd.Next(1, 10);
+        for (int j = 0; j < arrname.GetLength(1); j++)
+        {
+            // вводим ограничение в цифрах от 0 до 9
+            arrname[i, j] = rnd.Next(1, 10);
+        }
     }
 }
-//? Заполнить массив рандомными числами
-Console.WriteLine("Массив со случайными числами:");
-for (int i = 0; i < arr.GetLength(0); i++)
+
+void PrintArr(int[,] arrname)
 {
-    for (int j = 0; j < arr.GetLength(1); j++)
+    //? Заполнить массив рандомными числами
+    Console.WriteLine("Массив со случайными числами:");
+    for (int i = 0; i < arrname.GetLength(0); i++)
     {
-        // выводим массив на экран
-        Console.Write($"{arr[i, j]}\t");
+        for (int j = 0; j < arrname.GetLength(1); j++)
+        {
+            // выводим массив на экран
+            Console.Write($"{arrname[i, j]}\t");
+        }
+        Console.WriteLine("");
     }
     Console.WriteLine("");
 }
-Console.WriteLine("");
 
+RandomArr(arr);
+PrintArr(arr);
+
+////////////////////////////////////////////
 //? цикл суммирования строки в массиве (временная переменная суммы и запоминания строки (n+1))
 
 int minimum = 999;
