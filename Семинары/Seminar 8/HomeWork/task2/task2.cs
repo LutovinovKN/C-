@@ -83,7 +83,7 @@ void Print(int[,] a)
     {
         for (int j = 0; j < a.GetLength(1); j++)
         {
-            Console.Write("{0} ", a[i, j]);
+            Console.Write("{0} ", $" {a[i, j]}\t");
         }
         Console.WriteLine();
     }
