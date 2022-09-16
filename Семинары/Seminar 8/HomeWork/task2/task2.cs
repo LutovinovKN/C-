@@ -13,6 +13,11 @@ Console.WriteLine("Введите размер матрицы (строка / с
 string[] matrix = Console.ReadLine().Split();
 int i_cor = int.Parse(matrix[0]);
 int j_cor = int.Parse(matrix[1]);
+if (i_cor != j_cor)
+{
+    Console.WriteLine("Такие матрицы нельзя перемножить, так как количество столбцов матрицы А не равно количеству строк матрицы В.: ");
+    return;
+}
 int[,] arr1 = new int[i_cor, j_cor];
 int[,] arr2 = new int[i_cor, j_cor];
 
