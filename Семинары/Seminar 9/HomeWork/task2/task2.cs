@@ -7,157 +7,77 @@
 //!     11 16 15 06
 //!     10 09 08 07
 
-Console.Clear();
+// Console.Clear();
 
-Console.WriteLine("Введите размер массива (строка / столбец, через пробел, например (3 4)): ");
-string[] array = Console.ReadLine().Split();
-int i_cor = int.Parse(array[0]);
-int j_cor = int.Parse(array[1]);
+// const int n = 4;
+// const int m = 4;
+// int[,] matrix = new int[n, m];
 
-int[,] arr1 = new int[i_cor, j_cor];
+// int row = 0;
+// int col = 0;
+// int dx = 1;
+// int dy = 0;
+// int dirChanges = 0;
+// int visits = m;
+
+// for (int i = 0; i < matrix.Length; i++)
+// {
+//     matrix[row, col] = i + 1;
+//     if (--visits == 0)
+//     {
+//         visits = m * (dirChanges % 2) + n * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;
+//         int temp = dx;
+//         dx = -dy;
+//         dy = temp;
+//         dirChanges++;
+//     }
+
+//     col += dx;
+//     row += dy;
+//     Console.Write("{0,2}", matrix[row, col]);
+// }
 
 
-// int number = 4;
-var position = new { x = -1, y = 0 };
-var directions = new[]
+
+
+int main()
 {
-    new { x = 1, y = 0 },
-    new { x = 0, y = 1 },
-    new { x = -1, y = 0 },
-    new { x = 0, y = -1 }
-};
-// var sequence = (
-//     from n in Enumerable.Range(1, number)
-//     from o in Enumerable.Repeat(n, n != number ? 2 : 1)
-//     select o
-// ).Reverse().ToList();
-// var result = new int[number, number];
+    int a = int Next[4, 4];
+    int N, M;
 
-// for (int i = 0, current = 1; i < sequence.Count; i++)
-// {
-//     var direction = directions[i % directions.Length];
-//     for (int j = 0; j < sequence[i]; j++, current++)
-//     {
-//         position = new
-//         {
-//             x = position.x + direction.x,
-//             y = position.y + direction.y
-//         };
-//         // Console.Write(position);
-//         result[position.y, position.x] = current;
-//         Console.Write("{0} ", $" {result[position.y, position.x]}\t");
-//     }
-//     Console.Write("\n");
-// }
+    scanf("%d%d", &N, &M);
+    
+    int Ibeg = 0, Ifin = 0, Jbeg = 0, Jfin = 0;
+    
+    int k = 1;
+    int i = 0;
+    int j = 0;
 
+    while (k <= N * M){
+        a[i][j] = k;
+        if (i == Ibeg && j < M - Jfin - 1)
+            ++j;
+        else if (j == M - Jfin - 1 && i < N - Ifin - 1)
+            ++i;
+        else if (i == N - Ifin - 1 && j > Jbeg)
+            --j;
+        else
+            --i;
 
+        if ((i == Ibeg + 1) && (j == Jbeg) && (Jbeg != M - Jfin - 1)){
+            ++Ibeg;
+            ++Ifin;
+            ++Jbeg;
+            ++Jfin;
+        }
+        ++k;
+    }
+    
+    for (int i = 0; i < 10; ++i){
+        for (int j = 0; j < 10; ++j)
+            printf("%3d", a[i][j]);
+        printf("\n");
+    }
 
-
-
-
-
-// class Program
-// {
-
-//     public static void Main(String[] args)
-//     {
-//         //Заполним массив, количество строк мы обозначим m, а столбцов - n.
-//         int m = 5;
-//         int n = 5;
-//         //С помощью переменной s задаются числа внутри массива начиная с 1.
-//         int s = 1;
-//         //Объявляем и инициализируем массив.
-//         int[,] array = new int[m, n];
-//         //Заполняем периметр массива по часовой стрелке.
-//         for (int y = 0; y < n; y++)
-//         {
-//             array[0, y] = s;
-//             s++;
-//         }
-//         for (int x = 1; x < m; x++)
-//         {
-//             array[x, n - 1] = s;
-//             s++;
-//         }
-//         for (int y = n - 2; y >= 0; y--)
-//         {
-//             array[m - 1, y] = s;
-//             s++;
-//         }
-//         for (int x = m - 2; x > 0; x--)
-//         {
-//             array[x, 0] = s;
-//             s++;
-//         }
-//         //Периметр заполнен. Продолжаем заполнять массив и задаём
-//         //координаты ячейки, которую необходимо заполнить следующей.
-//         int c = 1;
-//         int d = 1;
-//         while (s < m * n)
-//         {
-//             //В Java инициализированный интовый массив заполняется нулями.
-//             //Периметр мы заполнили числами, отличными от нулей.
-//             //Следующие циклы поочерёдно работают, заполняя ячейки.
-//             //Вложенный цикл останавливается, если следующая ячейка имеет 
-//             //значение, отличное от ноля. Ячейка, на которой остановился 
-//             //цикл, не заполняется.
-//             //Движемся вправо.
-//             while (array[c, d + 1] == 0)
-//             {
-//                 array[c, d] = s;
-//                 s++;
-//                 d++;
-//             }
-//             //Движемся вниз.
-//             while (array[c + 1, d] == 0)
-//             {
-//                 array[c, d] = s;
-//                 s++;
-//                 c++;
-//             }
-//             //Движемся влево.
-//             while (array[c, d - 1] == 0)
-//             {
-//                 array[c, d] = s;
-//                 s++;
-//                 d--;
-//             }
-//             //Движемся вверх.
-//             while (array[c - 1, d] == 0)
-//             {
-//                 array[c, d] = s;
-//                 s++;
-//                 c--;
-//             }
-//         }
-//         //При данном решении в центре всегда остаётся незаполненная ячейка.
-//         //Убираем её при помощи следующего цикла.
-//         for (int x = 0; x < m; x++)
-//         {
-//             for (int y = 0; y < n; y++)
-//             {
-//                 if (array[x, y] == 0)
-//                 {
-//                     array[x, y] = s;
-//                 }
-//             }
-//         }
-//         //Выводим массив в консоль.
-//         for (int x = 0; x < m; x++)
-//         {
-//             for (int y = 0; y < n; y++)
-//             {
-//                 if (array[x, y] < 10)
-//                 {
-//                     //Два пробела, чтобы в консоли столбцы были ровные.
-//                     Console.WriteLine(array[x, y] + "\t");
-//                 }
-//                 else
-//                 {
-//                     Console.WriteLine(array[x, y] + "\n");
-//                 }
-//             }
-//             Console.WriteLine("");
-//         }
-//     }
-// }
+    return 0;
+}
